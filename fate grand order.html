@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <script align = "center">
+/*  function writeString(){
+    document.write("wellcome to use JavaScript");
+  }*/
+    var w = function(y){
+		console.log("in func(c) y is "+y);
+      return y +" Saber圖鑑開啟"; 
+    }
+    function getcard(x,func){  
+      var c = "You got 4*Saber";
+      var f;
+      f = x+" "+c;
+	  console.log("in getcard f is "+f);
+      return func(f);
+    }
+	
+  </script>
+  <script>
+    var x = "FateGrandOder";
+    
+    var c = getcard(x,w);
+    console.log("c is "+c);
+	document.write(c);
+   </script>
+</body>
+</html>
